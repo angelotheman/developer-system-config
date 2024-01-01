@@ -5,7 +5,7 @@ This repository contains my developer configuration for my ALX Software Engineer
 - [Vagrant Setup](./vagrant-setup): Virtual environment for rapid coding. Easy to set-up and use.
 - [Vim Configuration](./vim-config): Optimized Vim settings and plugins for an enhanced coding experience
 - [Betty Installation](./betty-installation): Automated script to install Betty, a C programming style checker.
-- [Pycodestyle Installation](./pycodestyle-installation): Instructions to install Pycodestyle for Python programming.
+- [Other Installations](./other-installs): Instructions to install Pycodestyle for Python programming.
 
 
 ## Contributing
