@@ -1,0 +1,78 @@
+" Add these lines at the beginning of your vimrc
+call plug#begin('~/.vim/plugged')
+
+" Install ale
+Plug 'dense-analysis/ale'
+
+call plug#end()
+
+" Add these lines after your other settings
+let g:ale_lint_on_text_changed = 'always'
+let g:ale_lint_on_insert_leave = 1
+let g:ale_lint_on_enter = 1
+
+" Use pycodestyle as a linter for Python and Betty for C
+let g:ale_linters = {
+    \ 'python': ['pycodestyle'],
+    \ 'c' : ['betty-check'],
+    \ }
+
+let g:ale_fixers = {
+    \ 'c': ['betty-fix'],
+    \ }
+
+let g:ale_python_autopep8_options = '--max-line-length=100'
+
+
+" Automatically fix on save
+let g:ale_fix_on_save = 1
+
+
+" Enable line numbers
+set number
+
+" Enable syntax highlighting
+syntax enable
+
+" Automatically indent based on file type
+filetype plugin indent on
+
+" Enable smartindent and cindent
+set smartindent
+set cindent
+
+" Enable autoindent
+set autoindent
+
+" Enable line wrapping
+set wrap
+
+" Display matching parentheses
+set showmatch
+
+" Highlight search results as you type
+set incsearch
+
+" Highlight current line
+set cursorline
+
+" Display ruler with cursor position
+set ruler
+
+" Set background color to dark or light, depending on your preference
+set background=dark
+" or
+" set background=light
+
+" Display matching parentheses, brackets, and braces
+set showmatch
+
+" Display matching parentheses
+set matchpairs+=(:),{:},[:]
+
+" Display status line with file information
+set laststatus=2
+
+" Use spaces for tabs and set the size of each tabstop
+autocmd FileType c,sh setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
