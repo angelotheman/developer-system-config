@@ -2,6 +2,8 @@
 
 This repository contains my developer configuration for the ALX Software Engineering School, organized into the following directories
 
+## Various Directories
+
 - [Vagrant Setup](./vagrant-setup): Virtual environment for rapid coding. Easy to set-up and use.
 - [Vim Configuration](./vim-config): Optimized Vim settings and plugins for an enhanced coding experience
 - [Betty Installation](./betty-installation): Automated script to install Betty, a C programming style checker.
